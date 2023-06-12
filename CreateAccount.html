@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="login.css" rel="stylesheet">
+  <link rel="stylesheet" href="header.css">
+  <script src="login.js"></script>
+  <script src="javascripts.js"></script>
+</head>
+<body onload="onload()">
+  <header>
+    <br>
+    <br>
+    <div class="menu_bar">
+      <h1 class="logo"><img src="picture Akid/uniqdo1-02.png" alt="uniqdo2" height="40">
+      <img src="picture Akid/uniqdo1-01.png" alt="uniqdo1" height="40
+      ">
+      </h1>
+  
+      <ul>
+        <li><a href="Home html.html">Home</a></li>
+        <li>
+          <a href="#">Category</a>
+  
+          <div class="dropdown_menu">
+            <ul>
+              <li><a href="Mens.html">Men</a>
+                <div class="dropdown_menu-1">
+                  <ul>
+                    <li><a href="Mens Shirts.html">Shirt</a></li>
+                    <li><a href="Mens Pants.html">Pants</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="Womens.html">Women</a>
+                <div class="dropdown_menu-1">
+                  <ul>
+                    <li><a href="Womens Shirts.html">Shirt</a></li>
+                    <li><a href="Womens Pants.html">Pants</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="favourite.html">Favourite</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="support.html">Help</a></li>
+        
+        <button class="container__btn" onclick="darkmode()"><img src="picture Akid/moon.png" class="fa fa-bars" onclick="changeImage()" alt="moon" id="icon"></button>
+    
+      </div>
+      </ul>
+    </div>
+</header>
+
+  <br>
+  <hr>
+  <div class="container2">
+    <h2><b>CREATE AN ACCOUNT</b></h2><br>
+    <p>You will receive the confirmation mail to your email address associated with<br>account. Please make sure to check your incoming email from us.</p>
+    <form>
+      <div class="information">
+        <label for="email">EMAIL ADDRESS</label><br>
+        <input type="email" id="email" required>
+        <p>Enter a valid Email</p>
+      </div>
+      <div class="information">
+        <label for="password">PASSWORD</label><br>
+        <input type="password" id="Show" required>
+        <p>Password must be at least 8 characters, and contain both letters and numbers.</p>
+        <br>
+        <input type="checkbox" name="" onclick="showPassword()">
+        <label>Show Password</label>
+      </div>
+      <div class="information">
+        <label for="birthday">BIRTHDAY</label><br>
+        <input type="date" id="birthday" required>
+      </div>
+      <div class="information">
+        <label for="checkbox">GENDER</label><br>
+        <input type="checkbox" id="gender">
+        <label for="male"> Male</label>&nbsp;
+        <input type="checkbox" id="Female">
+        <label for="female"> Female</label>
+      </div>
+      <hr><br>
+      <button type="submit" class="btn" onclick="Register()">Register</button>
+     </form>
+  </div>
+  <footer>
+    <p>&copy; 2023 UNIQDO. All rights reserved.</p>
+  </footer>
+</body>
+</html>
